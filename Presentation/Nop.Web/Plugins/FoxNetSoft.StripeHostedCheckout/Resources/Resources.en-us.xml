@@ -1,0 +1,268 @@
+﻿<Language Name="English" IsRightToLeft="false">
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.showDebugInfo">
+    <Value>Enable Debugging</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.showDebugInfo.Hint">
+    <Value>Write debugging information into file. In ~/App_Data/ folder.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.SerialNumber">
+    <Value>Serial Number</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.SerialNumber.Hint">
+    <Value>Specify serial number.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.IsRegisted">
+    <Value>Registered version.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.IsNoRegisted">
+    <Value>Unregistered version is fully operational. There is only one limitation – only 100 payments.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.IsExpired">
+    <Value>Your license has expired, you should renew the license with a 50% discount.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.StoreUrl">
+    <Value>Website address (for registration)</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.StoreUrl.Hint">
+    <Value>Website address (for registration).</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.ClearLogFile">
+    <Value>Clear log-file</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.GetLogFile">
+    <Value>Download log-file</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.PublishableKey">
+    <Value>Publishable key</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.PublishableKey.Hint">
+    <Value>Specify Publishable key.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.SecretKey">
+    <Value>Secret key</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.SecretKey.Hint">
+    <Value>Specify secret key.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.TransactMode">
+    <Value>Transaction mode</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.TransactMode.Hint">
+    <Value>Choose transaction mode.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.WebhookId">
+    <Value>Webhook ID</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.WebhookId.Hint">
+    <Value>Specify webhook ID.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.SigningSecretKey">
+    <Value>Webhook Signing Secret</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.SigningSecretKey.Hint">
+    <Value>Specify webhook 'Signing Secret' from webhook detail's paqge.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.UseSandbox">
+    <Value>Use Sandbox</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.UseSandbox.Hint">
+    <Value>Check to enable Sandbox (testing environment).</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.SupportMultiCurrency">
+    <Value>Support multi-currency</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.SupportMultiCurrency.Hint">
+    <Value>By default plugin uses the primary currency of store, but you can enabled to use the customer's currency of the order.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.CreateOrderMode">
+    <Value>Create order</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.CreateOrderMode.Hint">
+    <Value>Choose the creating mode for nop order (after or before payment).</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.SkipPaymentInfo">
+    <Value>Skip payment info page</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.SkipPaymentInfo.Hint">
+    <Value>Skip payment info page.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.IgnoreOrderItems">
+    <Value>Don't send order's items (recommend)</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.IgnoreOrderItems.Hint">
+    <Value>Don't send order items on Stripe. Customer will not see products from the order on Stripe Hosted Checkout Page site, he will see only total amount. We recomend you to use this option because you will avoid 'issue with rounding'.</Value>
+  </LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.PaymentMethods">
+		<Value>The list of supported payment methods on the Stripe Hosted Checkout page.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableCreditCard">
+		<Value>Enable Credit Cards</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableCreditCard.Hint">
+		<Value>Enable Credit Cards on the Stripe Hosted Checkout page.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableBancontact">
+		<Value>Enable Bancontact</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableBancontact.Hint">
+		<Value>Enable Bancontact on the Stripe Hosted Checkout page.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableBancontact.Description">
+		<Value>Bancontact supports only Euro and 'Authorize and Capture' mode.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableiDEAL">
+		<Value>Enable iDEAL</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableiDEAL.Hint">
+		<Value>Enable iDEAL on the Stripe Hosted Checkout page.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableiDEAL.Description">
+		<Value>iDEAL supports only Euro and 'Authorize and Capture' mode.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableGiroPay">
+		<Value>Enable GiroPay</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableGiroPay.Hint">
+		<Value>Enable GiroPay on the Stripe Hosted Checkout page.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableGiroPay.Description">
+		<Value>GiroPay supports only Euro and 'Authorize and Capture' mode.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableSofort">
+		<Value>Enable Sofort</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableSofort.Hint">
+		<Value>Enable Sofort on the Stripe Hosted Checkout page.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableSofort.Description">
+		<Value>Sofort supports only Euro and 'Authorize and Capture' mode.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableSepaDebit">
+		<Value>Enable SEPA Direct Debit</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableSepaDebit.Hint">
+		<Value>Enable SEPA Direct Debit on the Stripe Hosted Checkout page.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableSepaDebit.Description">
+		<Value>SEPA Direct Debit supports only Euro and 'Authorize and Capture' mode.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnablePrzelewy24">
+		<Value>Enable Przelewy24</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnablePrzelewy24.Hint">
+		<Value>Enable Przelewy24 on the Stripe Hosted Checkout page.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnablePrzelewy24.Description">
+		<Value>Przelewy24 supports only Euro and PLZ and 'Authorize and Capture' mode.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableEPS">
+		<Value>Enable EPS</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableEPS.Hint">
+		<Value>Enable EPS on the Stripe Hosted Checkout page.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableEPS.Description">
+		<Value>EPS supports only Euro and 'Authorize and Capture' mode.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableAliPay">
+		<Value>Enable AliPay</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableAliPay.Hint">
+		<Value>Enable AliPay on the Stripe Hosted Checkout page.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableAliPay.Description">
+		<Value>AliPay supports only Euro and 'Authorize and Capture' mode.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableBacsDirectDebit">
+		<Value>Enable Bacs Direct Debit</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableBacsDirectDebit.Hint">
+		<Value>Enable Bacs Direct Debit on the Stripe Hosted Checkout page.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableAfterpayorClearpay">
+		<Value>Enable Afterpay or Clearpay</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableAfterpayorClearpay.Hint">
+		<Value>Enable Afterpay or Clearpay on the Stripe Hosted Checkout page.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.AdditionalFee">
+    <Value>Additional fee</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.AdditionalFee.Hint">
+    <Value>Enter additional fee to charge your customers.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.AdditionalFeePercentage">
+    <Value>Additional fee. Use percentage</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.AdditionalFeePercentage.Hint">
+    <Value>Determines whether to apply a percentage additional fee to the order total. If not enabled, a fixed value is used.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.Description">
+    <Value>Description of the payment</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.Description.Hint">
+    <Value>Extra information about a product which will appear on your customer’s credit card statement. In the case that multiple products are billed at once, the first statement descriptor will be used. Only available on products of type=service. By default your customer will see this message 'NopCommerce Store'.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.Description.Comment">
+    <Value>
+      <![CDATA[Statement descriptors are limited to 22 characters, cannot use the special characters <, >, ', ", or *.]]>
+    </Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableEmailReceipts">
+    <Value>Enable Email Receipts</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.EnableEmailReceipts.Hint">
+    <Value>Stripe will send payment or refund receipts automatically.</Value>
+  </LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.StoreTransactionDetails">
+		<Value>Store transaction details</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.StoreTransactionDetails.Hint">
+		<Value>Store transaction details in the order notes. You will be able to see Stripe fees, Stripe transanction ID, etc.</Value>
+	</LocaleResource>
+	<LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.WebhookDescription">
+    <Value>Important! Create Webhook from this page using the button 'Get webhook ID'. You need to have the live URL, not localhost. After it copy webhook secret key from Stripe Dashboard back to this page. Only Webhook can change the order payment status.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.WebhookCreate">
+    <Value>Get webhook ID</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.WebhookRemove">
+    <Value>Remove webhook ID</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.WebhookError">
+    <Value>Webhook was not created (see details in the log)</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.RemoveWebhookError">
+    <Value>Error. Can't remove Webhook Id={0}. Remove it manually from Stripe Dashboard.</Value>
+  </LocaleResource>
+  <LocaleResource Name="Admin.FoxNetSoft.Plugin.Payments.StripeHostedCheckout.OldLibrary">
+    <Value>Error. You has another plugin for Stripe with old Stripe.net.dll. Download the last release or uninstall and remove it from the folder 'Plugins'. This plugin uses the new library Stripe.net.dll.</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.StripeHostedCheckout.RedirectionTip">
+    <Value>You will be redirected to Stripe Hosted Checkout Payment Page.</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.StripeHostedCheckout.Redirection">
+    <Value>Redirection to Stripe Hosted Checkout Payment Page...</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.StripeHostedCheckout.PaymentMethodDescription">
+    <Value>After confirming order you will be redirected to Stripe Hosted Checkout page.</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.StripeHostedCheckout.Title">
+    <Value>Stripe Hosted Checkout Payment</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.StripeHostedCheckout.DescriptionError">
+    <Value>You have an error with this payment, please write to support and we'll try to help you.</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.StripeHostedCheckout.Error.Exception">
+    <Value>Error. Exception: '{0}'.</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.StripeHostedCheckout.Error.EmptyShoppingCart">
+    <Value>Error. Empty shopping cart. Contact to store's owner and tell about this problem.</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.StripeHostedCheckout.Error.CreatedOrder">
+    <Value>Error. Can't create order.</Value>
+  </LocaleResource>
+  <LocaleResource Name="FoxNetSoft.Plugin.Payments.StripeHostedCheckout.Common.Name">
+    <Value>Item(s)</Value>
+  </LocaleResource>
+</Language>

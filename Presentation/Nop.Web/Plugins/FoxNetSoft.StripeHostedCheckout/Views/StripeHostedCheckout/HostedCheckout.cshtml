@@ -1,0 +1,39 @@
+﻿@model FoxNetSoft.Plugin.Payments.StripeHostedCheckout.Models.PaymentInfoModel
+@using FoxNetSoft.Plugin.Payments.StripeHostedCheckout
+@{
+    Layout = "";
+}
+<style>
+    .message {
+        width: 100%;
+        text-align: center;
+    }
+    .spinner {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+<div class="message">
+    <p><b>@T("FoxNetSoft.Plugin.Payments.StripeHostedCheckout.Redirection")</b></p>
+    <div class="spinner">
+        <img alt="" src="/plugins/foxnetsoft.stripehostedcheckout/views/stripehostedcheckout/ajax_loader_large.gif">
+    </div>
+</div>
+<script src="@StripeHostedCheckoutDefaults.PaymentScriptPath"></script>
+<script>
+    window.addEventListener('load', function () {
+        //console.log('All assets are loaded')
+        var stripeHostedCheckout = Stripe('@Model.PublishableKey');
+        stripeHostedCheckout.redirectToCheckout({
+            sessionId: '@Model.SessionId'
+        }).then(function (result) {
+            // If `redirectToCheckout` fails due to a browser or network
+            // error, display the localized error message to your customer
+            // using `result.error.message`.
+            alert(result.error.message);
+            //displayPopupNotification(result.error.message, 'error', false);
+        });
+    });
+</script>

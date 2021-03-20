@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "Stripe Hosted Checkout",
+  "SystemName": "FoxNetSoft.StripeHostedCheckout",
+  "Version": "1.17",
+  "SupportedVersions": [ "4.40" ],
+  "Author": "FoxNetSoft",
+  "DisplayOrder": 1,
+  "FileName": "FoxNetSoft.Plugin.Payments.StripeHostedCheckout.dll",
+  "Description": "This plugin allows paying with Stripe Hosted Checkout payment."
+}

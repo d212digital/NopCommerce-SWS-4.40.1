@@ -1,0 +1,111 @@
+﻿@model FoxNetSoft.Plugin.Payments.StripeHostedCheckout.Models.PaymentInfoModel
+@{
+    Layout = "";
+}
+@if (Model.Warnings.Any())
+{
+    <div class="message-error">
+        <ul>
+            @foreach (var warning in Model.Warnings)
+            {
+                <li>@warning</li>
+            }
+        </ul>
+    </div>
+    <script>
+        function stripeHostedCheckoutInit() {
+            $(document).ready(function () {
+                $('.payment-info-next-step-button, .confirm-order-button').hide();
+                $("#checkoutForm").find("button[data-complete]").hide();
+            });
+            $(document).on('accordion_section_opened', function (data) {
+                if (data && (data.currentSectionId === 'opcpayment_methodbilling' || data.previousSectionId === 'opc-payment_info')) {
+                    $('.payment-info-next-step-button, .confirm-order-button').show();
+                }
+            });
+        }
+    </script>
+}
+else
+{
+    <table id="paymentstripehostedcheckout" style="width:100%;" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <p><b>@T("FoxNetSoft.Plugin.Payments.StripeHostedCheckout.RedirectionTip")</b></p>
+            </td>
+        </tr>
+    </table>
+}
+@if (!string.IsNullOrWhiteSpace(Model.SessionId))
+{
+    <script>
+        var stripeHostedCheckout;
+        if (typeof scriptpaypalpro === 'undefined') {
+            var scriptpaypalpro;
+        }
+        function stripeHostedCheckoutInit() {
+            $(document).ready(function () {
+                if (typeof stripeHostedCheckout === 'undefined') {
+                    stripeHostedCheckout = Stripe('@Model.PublishableKey');
+                }
+            });
+            if (typeof scriptpaypalpro === 'undefined') {
+                scriptpaypalpro = $('.payment-info-next-step-button').attr("onclick");
+            }
+            $(document).ready(function () {
+                $('.payment-info-next-step-button, .confirm-order-button').show().prop("onclick", null).unbind().click(submitstripehostedcheckout);
+                $("#checkoutForm").find("button[data-complete]").show().prop("onclick", null).unbind().click(submitstripehostedcheckout);
+            });
+        }
+        function submitstripehostedcheckout() {
+            if ($('#paymentstripehostedcheckout').length === 0) {
+                if (typeof scriptpaypalpro !== 'undefined' && scriptpaypalpro.length !== 0) {
+                    eval(scriptpaypalpro);
+                }
+                return true;
+            }
+
+            //terms of service
+            var termOfServiceOk = true;
+            var termsofservice = $('#termsofservice');
+            if ($('#termsofservice').length === 0)
+                termsofservice = $('#terms-of-service');
+            if (termsofservice.length > 0 && !termsofservice.is(":hidden")) {
+                //terms of service element exists
+                if (!termsofservice.is(':checked')) {
+                    var readterms = $("#terms-of-service-warning-box");
+                    if (readterms.length === 0)
+                        readterms = $('#read-terms');
+                    readterms.dialog();
+                    termOfServiceOk = false;
+                } else {
+                    termOfServiceOk = true;
+                }
+            }
+            if (termOfServiceOk) {
+                stripeHostedCheckout.redirectToCheckout({
+                    sessionId: '@Model.SessionId'
+                }).then(function (result) {
+                    // If `redirectToCheckout` fails due to a browser or network
+                    // error, display the localized error message to your customer
+                    // using `result.error.message`.
+                    //alert(result.error.message);
+                    displayPopupNotification(result.error.message, 'error', false);
+                });
+                return false;
+            } else {
+                return false;
+            }
+        }
+    </script>
+}
+
+<script>
+    function deferjqueryloading(method) {
+        if (window.jQuery && typeof $ == 'function')
+            method();
+        else
+            setTimeout(function () { deferjqueryloading(method) }, 50);
+    }
+    deferjqueryloading(stripeHostedCheckoutInit);
+</script>
